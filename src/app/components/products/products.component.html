@@ -1,0 +1,22 @@
+<div class="row" #product productDir>
+  <div class="col-md-3 card p-0 m-1" *ngFor=" let p of selectedCat" >
+    <div class="card-body">
+      <p>{{p.ProductId}}</p>
+      <p>{{p.Category}}</p>
+      <p>{{p.MainCategory}}</p>
+      <p>{{p.Description}}</p>
+      <button class="btn btn-primary text-white mt-2" (click)="goSomeWhere()">Read More..</button>
+    </div>
+  </div>
+</div>
+<!-- <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+    <mdb-carousel-item>
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+    </mdb-carousel-item>
+  </mdb-carousel> -->
